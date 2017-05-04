@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Settings
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-list-header>
+            <h4>Select News Categories:</h4>
+        </ion-list-header>
+        <ion-item>
+            <ion-icon name="ios-flask-outline" item-left></ion-icon>
+            <ion-label>Science</ion-label>
+            <ion-toggle [(ngModel)]='science' (click)='selectedCategories(this)'></ion-toggle>
+
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-ionitron-outline" item-left></ion-icon>
+            <ion-label>Technology</ion-label>
+            <ion-toggle [(ngModel)]='technology' (click)='selectedCategories(this)'></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-football" item-left></ion-icon>
+            <ion-label>Sports</ion-label>
+            <ion-toggle [(ngModel)]='sports' (click)='selectedCategories(this)'></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-stats-outline" item-left></ion-icon>
+            <ion-label>Business</ion-label>
+            <ion-toggle [(ngModel)]='business' (click)='selectedCategories(this)'></ion-toggle>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="ios-wine" item-left></ion-icon>
+            <ion-label>Entertainment</ion-label>
+            <ion-toggle [(ngModel)]='entertainment' (click)='selectedCategories(this)'></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>
